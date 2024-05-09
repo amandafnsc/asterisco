@@ -258,7 +258,7 @@ hr {
 }
 
 footer {
-    background-color: lightgoldenrodyellow;
+    background-color: var(--darkest-color);
     height: 100px;
     margin-top: 50px;
 }
