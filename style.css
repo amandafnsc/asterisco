@@ -83,6 +83,7 @@ h1 {
     display: flex;
     gap: 20px;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
 }
@@ -177,7 +178,9 @@ p {
     box-sizing: border-box;
     display: flex;
     flex-direction:row;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: space-between;
     margin: 0px 10px 10px;
 }
 
@@ -186,13 +189,9 @@ p {
     padding: 0px 10px;
 }
 
-.section-aside {
-    width: 110px;
-}
-
 .section-main {
     background-color: var(--html-color);
-    width: 300px;
+    width: 65%;
 }
 
 .structure-title, .structure-tags {
@@ -265,8 +264,9 @@ p {
 .result-box img, .result-box figcaption {
     display: block;
     margin: auto;
+    max-width: 300px;
     text-align: center;
-    width: 300px;
+    width: 100%;
 }
 
 .result-box figcaption {
