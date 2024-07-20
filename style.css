@@ -286,6 +286,8 @@ p {
 .table-example {
     background-color: white;
     border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     margin: auto;
 }
 
