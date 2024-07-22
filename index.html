@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./assets/logo-asterisco.svg">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -37,8 +38,8 @@
             <div class="hero-buttons">
                 <ul>
                     <li><a href="#html-content">HTML</a></li>
-                    <li><a href="/">CSS</a></li>
-                    <li><a href="/">JS</a></li>
+                    <li><a href="#css-content">CSS</a></li>
+                    <li><a href="#js-content">JS</a></li>
                 </ul>
             </div>
         </section>
@@ -98,12 +99,13 @@
             <div class="new-topic">
                 <h2 class="subtitle">Estrutura de um elemento HTML</h2>
                 <div class="code-box">
-                    <p class="code-text">
+                    <p>
                         &lt;element name <mark>(start tag)</mark>&gt; <br> <span class="tab-effect">Content of
-                            Element</span> <br> &lt;/element name <mark>(closing tag)</mark>&gt;</p>
+                            Element</span> <br> &lt;/element name <mark>(closing tag)</mark>&gt;
+                    </p>
                 </div>
                 <div class="code-box">
-                    <p class="code-text">
+                    <p>
                         &lt;element name attribute name = "value" <mark>(attribute)</mark>&gt; <br> <span
                             class="tab-effect">Content of Element</span> <br> &lt;/element name&gt;</p>
                 </div>
@@ -163,12 +165,12 @@
             <div class="new-topic">
                 <h2 class="subtitle">Exemplos</h2>
                 <div class="code-box">
-                    <p class="code-text">
+                    <p>
                         &lt;head&gt; <br> <span class="tab-effect">&lt;link rel="stylesheet"
                             href="./style.css"&gt;</span> <br> &lt;/head&gt;</p>
                 </div>
                 <div class="code-box">
-                    <p class="code-text">
+                    <p>
                         &lt;head&gt; <br> <span class="tab-effect">&lt;base href="./assets/" target="_blank"&gt;</span>
                         <br> &lt;/head&gt; <br> &lt;body&gt; <br> <span class="tab-effect">&lt;img
                             src="random.png"&gt;</span> <br> &lt;/body&gt;
@@ -314,7 +316,7 @@
                 <h2 class="subtitle">Exemplos</h2>
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">&lt;b&gt;&lt;i&gt;&lt;u&gt;Negrito Itálico
+                        <p>&lt;b&gt;&lt;i&gt;&lt;u&gt;Negrito Itálico
                             Sublin.&lt;/b&gt;&lt;/i&gt;&lt;/u&gt;</p>
                     </div>
                     <div class="result-box">
@@ -324,7 +326,7 @@
 
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">&lt;p&gt;Quebra de Linha &lt;br/&gt; Outra Linha&lt;/p&gt;</p>
+                        <p>&lt;p&gt;Quebra de Linha &lt;br/&gt; Outra Linha&lt;/p&gt;</p>
                     </div>
                     <div class="result-box">
                         <p class="result-text">Quebra de Linha <br /> Outra Linha</p>
@@ -333,7 +335,7 @@
 
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">&lt;p&gt;Linha Horizontal&lt;/p&gt; &lt;hr&gt;</p>
+                        <p>&lt;p&gt;Linha Horizontal&lt;/p&gt; &lt;hr&gt;</p>
                     </div>
                     <div class="result-box">
                         <p class="result-text">
@@ -345,7 +347,7 @@
 
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">&lt;p&gt;The 21&lt;sup&gt;st&lt;/sup&gt; century is from 2001 to
+                        <p>&lt;p&gt;The 21&lt;sup&gt;st&lt;/sup&gt; century is from 2001 to
                             2010.&lt;/p&gt;</p>
                     </div>
                     <div class="result-box">
@@ -363,14 +365,14 @@
                     da fonte pode ser dada usando o <mark>&lt;cite&gt;</mark> elemento. Enquanto que para citações
                     curtas, use o elemento <mark>&lt;q&gt;</mark>.</p>
                 <div class="code-box">
-                    <p class="code-text">
+                    <p>
                         &lt;blockquote cite= "https://www.unknown.com"&gt; <br> <span class="tab-effect">&lt;p&gt;Uma
                             citação bem extensa.&lt;/p&gt;</span> <br> &lt;/blockquote&gt;</p>
                 </div>
 
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">
+                        <p>
                             &lt;p&gt;Como dizia &lt;cite&gt;alguém sábio&lt;/cite&gt;, &lt;q&gt;uma citação
                             curta&lt;/q&gt;.&lt;/p&gt;</p>
                     </div>
@@ -389,7 +391,7 @@
 
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">
+                        <p>
                             &lt;details&gt; <br> <span class="tab-effect">&lt;summary&gt;Aqui tem mais
                                 infos&lt;/summary&gt;</span> <br> <span class="tab-effect">&lt;p&gt;mais
                                 infos&lt;/p&gt;</span> <br> &lt;/details&gt;</p>
@@ -437,7 +439,7 @@
                         finalizado.</li>
                 </ul>
                 <div class="code-box">
-                    <p class="code-text">&lt;img src="imagem.png"/&gt;</p>
+                    <p>&lt;img src="imagem.png"/&gt;</p>
                 </div>
                 <ul class="topics">
                     <li>
@@ -448,7 +450,7 @@
                 </ul>
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">
+                        <p>
                             &lt;figue&gt; <br> <span class="tab-effect">&lt;img src="flower.png" alt="buquê de flores
                                 genéricas em preto e branco"/&gt; <br> <span class="tab-effect">&lt;figcaption&gt;um
                                     buquê
@@ -482,7 +484,7 @@
                         como 1, 2, 3, e assim sucessivamente.</li>
                 </ul>
                 <div class="code-box">
-                    <p class="code-text">
+                    <p>
                         &lt;ol&gt; <br>
                         <span class="tab-effect">&lt;li&gt;primeiro item&lt;/li&gt;</span> <br>
                         <span class="tab-effect">&lt;li&gt;segundo item&lt;/li&gt;</span> <br>
@@ -497,7 +499,7 @@
 
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">
+                        <p>
                             &lt;ol start="4"&gt; <br>
                             <span class="tab-effect">&lt;li&gt;quarto item&lt;/li&gt;</span> <br>
                             <span class="tab-effect">&lt;li&gt;quinto item&lt;/li&gt;</span> <br>
@@ -522,7 +524,7 @@
                 </ul>
 
                 <div class="code-box">
-                    <p class="code-text">&lt;ol type="a"&gt; <br>
+                    <p>&lt;ol type="a"&gt; <br>
                         <span class="tab-effect">&lt;li&gt;item a&lt;/li&gt;</span> <br>
                         <span class="tab-effect">&lt;li&gt;item b&lt;/li&gt;</span> <br>
                         <span class="tab-effect">&lt;li&gt;item c&lt;/li&gt;</span> <br> &lt;/ol&gt;
@@ -538,7 +540,7 @@
                     <li>Eles são formados por símbolos, que podem ser bola, quadrado, e uma bola vazia.</li>
                 </ul>
                 <div class="code-box">
-                    <p class="code-text">&lt;ul&gt; <br>
+                    <p>&lt;ul&gt; <br>
                         <span class="tab-effect">&lt;li&gt;item&lt;/li&gt;</span> <br>
                         <span class="tab-effect">&lt;li&gt;item&lt;/li&gt;</span> <br>
                         <span class="tab-effect">&lt;li&gt;item&lt;/li&gt;</span> <br> &lt;/ul&gt;
@@ -552,7 +554,7 @@
                     <li>Composta por termos e suas respectivas definições</li>
                 </ul>
                 <div class="code-box">
-                    <p class="code-text">&lt;dl&gt; <br>
+                    <p>&lt;dl&gt; <br>
                         <span class="tab-effect">&lt;dt&gt;the first item&lt;/dt&gt;</span> <br>
                         <span class="tab-effect"></span><span class="tab-effect">&lt;dd&gt;first term
                             definition&lt;/dd&gt;</span></span> <br> &lt;/dl&gt;
@@ -589,22 +591,22 @@
                 </ul>
 
                 <div class="code-box">
-                    <p class="code-text">&lt;a href= "https://www.link.com"&gt; <br> <span class="tab-effect">&lt;img
+                    <p>&lt;a href= "https://www.link.com"&gt; <br> <span class="tab-effect">&lt;img
                             src="imagem.png"/&gt;</span> <br> &lt;/a&gt;</p>
                 </div>
                 <div class="code-box">
-                    <p class="code-text">&lt;a href= "mailto: someone@gmail.com"&gt; <br> <span class="tab-effect">Send
+                    <p>&lt;a href= "mailto: someone@gmail.com"&gt; <br> <span class="tab-effect">Send
                             email</span> <br> &lt;/a&gt;</p>
                 </div>
                 <div class="code-box">
-                    <p class="code-text">
+                    <p>
                         &lt;h2&gt;<mark>Endereçamento Absoluto</mark>&lt;/h2&gt; <br> <br>
                         &lt;p&gt;&lt;a href= "https://www.google.com/"&gt; <br> <span class="tab-effect">Google</span>
                         <br> &lt;/a&gt;&lt;/p&gt;
                     </p>
                 </div>
                 <div class="code-box">
-                    <p class="code-text">
+                    <p>
                         &lt;h2&gt;<mark>Endereçamento Relativo</mark>&lt;/h2&gt; <br> <br>
                         &lt;p&gt;&lt;a href="./random.docs"&gt; <br> <span class="tab-effect">Docs</span> <br>
                         &lt;/a&gt;&lt;/p&gt;
@@ -634,9 +636,10 @@
 
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">&lt;table&gt; <br>
+                        <p>&lt;table&gt; <br>
                             <span class="tab-effect">&lt;tr&gt;</span> <br>
-                            <span class="tab-effect"></span><span class="tab-effect">&lt;td&gt;&lt;/td&gt;</span></span> <br>
+                            <span class="tab-effect"></span><span class="tab-effect">&lt;td&gt;&lt;/td&gt;</span></span>
+                            <br>
                             <span class="tab-effect"></span><span
                                 class="tab-effect">&lt;th&gt;Mateus&lt;/th&gt;</span></span> <br>
                             <span class="tab-effect"></span><span
@@ -694,7 +697,7 @@
 
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">&lt;table&gt; <br>
+                        <p>&lt;table&gt; <br>
                             <span class="tab-effect">&lt;tr&gt;</span> <br>
                             <span class="tab-effect"></span><span class="tab-effect">&lt;td colspan="3"&gt;Célula
                                 1&lt;/td&gt;</span></span> <br>
@@ -732,7 +735,7 @@
 
                 <div class="code-result-box">
                     <div class="code-box">
-                        <p class="code-text">&lt;table&gt; <br>
+                        <p>&lt;table&gt; <br>
                             <span class="tab-effect">&lt;tr&gt;</span> <br>
                             <span class="tab-effect"></span><span class="tab-effect">&lt;td rowspan="3"&gt;Célula
                                 1&lt;/td&gt;</span></span> <br>
@@ -761,6 +764,286 @@
                         </table>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="css-content">
+            <div class="new-topic">
+                <h2 class="subtitle">O que é CSS?</h2>
+                <p>CSS (Cascading Style Sheets) <mark>é uma linguagem de estilo</mark> usada para descrever a
+                    apresentação de um documento escrito em HTML</p>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Formas de Adicionar o CSS</h2>
+                <h3>Externo</h3>
+                <div class="code-box">
+                    <p>
+                        &lt;!DOCTYPE html&gt; <br>
+                        &lt;html&gt; <br>
+                        &lt;head&gt; <br>
+                        <span class="tab-effect"><mark>&lt;link rel="stylesheet" href="./style.css"&gt;</mark></span> <br>
+                        &lt;/head&gt; <br>
+                        &lt;/html&gt;
+                    </p>
+                </div>
+                <h3>Interno</h3>
+                <div class="code-box">
+                    <p>
+                        &lt;!DOCTYPE html&gt; <br>
+                        &lt;html&gt; <br>
+                        &lt;head&gt; <br>
+                        <span class="tab-effect"><mark>&lt;style&gt;</mark></span> <br>
+                        <span class="tab-effect"><span class="tab-effect"><mark>body {background-color: black;}</mark></span></span> <br>
+                        <span class="tab-effect">&lt;/style&gt;</span> <br>
+                        &lt;/head&gt; <br>
+                        &lt;/html&gt;
+                    </p>
+                </div>
+                <h3>Inline</h3>
+                <div class="code-box">
+                    <p>
+                        &lt;!DOCTYPE html&gt; <br>
+                        &lt;html&gt; <br>
+                        &lt;body&gt; <br>
+                        <span class="tab-effect">&lt;h1 <mark>style= "color:blue;text-align:center;"</mark>&gt;</span> <br>
+                        <span class="tab-effect"><span class="tab-effect">This is a heading</span></span> <br>
+                        <span class="tab-effect">&lt;/h1&gt;</span> <br>
+                        &lt;/body&gt; <br>
+                        &lt;/html&gt;
+                    </p>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Sintaxe CSS</h2>
+                <div class="code-box">
+                    <p>
+                        <mark>selector</mark> {<mark>property: value</mark> (declaration);} <br>
+                        h1 {color: blue; font-size: 12px;}
+                    </p>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Exemplo</h2>
+                <div class="code-box">
+                    <p>
+                        p { <br> <span class="tab-effect">color: red;</span> <br> <span class="tab-effect">text-align:
+                            center;</span> <br> }
+                    </p>
+                </div>
+                <ul class="topics">
+                    <li><mark>p</mark>: selector que aponta para a tag &lt;p&gt; do HTML</li>
+                    <li><mark>color</mark>: propriedade, e <mark>red</mark>, o seu respectivo valor</li>
+                    <li><mark>text-align</mark>: propriedade e <mark>center</mark>, o seu respectivo valor</li>
+                </ul>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Seletores CSS</h2>
+                <p>Cada seletor tem um peso, e a soma dos pesos será levada em conta para que determinada declaração
+                    seja mais específica. A cascata perde prioridade e é priorizada a <mark>especificidade da
+                        declaração</mark>.</p>
+                <h3>#id</h3>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            &lt;p <mark>id="exemplo"</mark>&gt;Hello World!&lt;/p&gt;
+                        </p>
+                    </div>
+                    <div class="code-box">
+                        <p>
+                            <mark>#exemplo</mark> { <br> <span class="tab-effect">text-align: center;</span> <br> }
+                        </p>
+                    </div>
+                </div>
+                <h3>.class</h3>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            &lt;h1 <mark>class="center"</mark>&gt;Red Heading&lt;/h1&gt;
+                        </p>
+                    </div>
+                    <div class="code-box">
+                        <p>
+                            <mark>.center</mark> { <br> <span class="tab-effect">color: red;</span> <br> }
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Hierarquia dos Seletores</h2>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            &lt;p <mark>id="unico"</mark>&gt;O id é único.&lt;/p&gt; <br>
+                            &lt;p <mark>class="qualquer"</mark>&gt;A class específica.&lt;/p&gt; <br> &lt;p&gt;Frase
+                            genérica.&lt;/p&gt;
+                        </p>
+                    </div>
+                    <div class="code-box">
+                        <p>
+                            <mark>#unico</mark> {color: blue;} <br>
+                            <mark>.qualquer</mark> { color: red;} <br>
+                            p {color: black;}
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-id">O id é único.</p>
+                        <p class="result-class">A class é específica.</p>
+                        <p class="result-text">Frase genérica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Seletor Universal</h2>
+                <p>Aplica para todos os elementos dentro do seletor, muito usado para resetar "margin" e "padding" do
+                    padrão dos navegadores.</p>
+                <div class="code-box">
+                    <p>
+                        <mark>*</mark> { <br> <span class="tab-effect">text-align: center;</span> <br> }
+                    </p>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Agrupamento de Seletores</h2>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            h1 {color: red;} <br>
+                            h2 {color: red;} <br>
+                            p {color: red;}
+                        </p>
+                    </div>
+                    <div class="code-box">
+                        <p>
+                            <mark>h1, h2, p</mark> {color: red;}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Resumo dos Seletores</h2>
+                <ul class="topics">
+                    <li><mark>#firstname</mark>: Seleciona o elemento com id="firstname"</li>
+                    <li><mark>.intro</mark>: Seleciona os elementos com class="intro"</li>
+                    <li><mark>p .intro</mark>: Seleciona apenas elementos &lt;p&gt; com class="intro"</li>
+                    <li><mark>*</mark>: Seleciona todos os elementos</li>
+                    <li><mark>p</mark>: Seleciona todos os elementos &lt;p&gt;</li>
+                    <li><mark>div, p</mark>: Seleciona todos os elementos &lt;div&gt; e todos os &lt;p&gt;</li>
+                </ul>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Pseudo-Classes</h2>
+                <p>São utilizadas para definir <mark>estados específicos</mark> de um elemento</p>
+                <ul class="topics">
+                    <li><mark>:hover</mark>: Aplica estilos quando o mouse passa sobre um elemento</li>
+                    <li><mark>:active</mark>: Aplica estilos quando um elemento está sendo ativado pelo usuário (como
+                        quando um botão é pressionado)</li>
+                    <li><mark>:focus</mark>: Aplica estilos quando um elemento tem foco, como quando um campo de entrada
+                        de texto está pronto para receber entrada do usuário</li>
+                    <li><mark>:first-child</mark>: Aplica estilos ao primeiro filho de um elemento pai</li>
+                    <li><mark>:last-child</mark>: Aplica estilos ao último filho de um elemento pai</li>
+                    <li><mark>:nth-child(x)</mark>: Aplica estilos a filhos de um elemento pai em uma ordem específica
+                        (por exemplo, um número específico de um filho ou até mesmo filhos pares ou ímpares)</li>
+                </ul>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Exemplo de Estados de um Link</h2>
+                <div class="code-box">
+                    <p>
+                        /* unvisited link */ <br>
+                        <mark>a:link</mark> {color:#FF0000;} <br>
+                        /* visited link */ <br>
+                        <mark>a:visited</mark> {color:#00FF00;} <br>
+                        /* mouse over link */ <br>
+                        <mark>a:hover</mark> {color:#FF00FF;} <br>
+                        /* selected link */ <br>
+                        <mark>a:active</mark> {color:#0000FF;}
+                    </p>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Pseudo-Elementos</h2>
+                <p>São usados para adicionar <mark>estilos especiais</mark> a determinadas partes de um elemento. Usado
+                    para estilizar a primeira letra ou linha de um elemento, ou até mesmo inserir conteúdo antes ou
+                    depois de um elemento, por exemplo.</p>
+                <h3>::before e ::after</h3>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            /* Pode adicionar um ícone decorativo antes e depois de um texto */ <br> p::before, p::after
+                            { <br> <span class="tab-effect">content:"★"</span> <br> }
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-before-example">Oiee, aqui é a Amanda!</p>
+                    </div>
+                </div>
+                <h3>::first-letter</h3>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            /* Permite estilizar a primeira letra de um bloco de texto */ <br> p::first-letter { <br>
+                            <span class="tab-effect">font-size: 16px;</span> <br> <span class="tab-effect">font-weight:
+                                500;</span> <br> }
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-first-letter-example">Era uma vez</p>
+                    </div>
+                </div>
+                <h3>::first-line</h3>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            /* Permite estilizar a primeira linha de um bloco de texto, que pode ser útil para aplicar
+                            estilos de abertura em artigos e postagens de blog */ <br> p::first-line { <br> <span
+                                class="tab-effect">color: blue</span> <br> <span class="tab-effect">font-variant:
+                                small-caps;</span> <br> }
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-first-line-example">Primeira linha do artigo. <br> Restante do texto. <br> Mais
+                            um pouco de texto.</p>
+                    </div>
+                </div>
+                <h3>::selection</h3>
+                <div class="code-box">
+                    <p>
+                        /* Aplica estilos ao texto selecionado pelo usuário */ <br> ::selection { <br> <span class="tab-effect">color: white</span> <br> <span class="tab-effect">background-color: black;</span> <br> }
+                    </p>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h2 class="subtitle">Modelo CSS Box</h2>
+                <div class="box-css-model">
+                    <p>Margin</p>
+                    <div class="border-box">
+                        <p>Border</p>
+                        <div class="padding-box">
+                            <p>Padding</p>
+                            <div class="content-box">
+                                <p>Content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="js-content">
+            <div class="new-topic">
+                <h2 class="subtitle">Em desenvolvimento...</h2>
             </div>
         </section>
     </main>
