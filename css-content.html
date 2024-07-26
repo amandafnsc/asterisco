@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./assets/logo-asterisco.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Front - Asterisco</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/index.html">
+                    <img class="logo-icon" src="./assets/logo-asterisco.svg" alt="ícone de um asterisco">
+                    <p class="logo-text">asterisco</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>O básico do Front-end em um só lugar</h1>
+            <p class="hero-subtitle">Aprenda de vez tudo o que precisa saber para criar seu primeiro site com Asterisco
+            </p>
+        </section>
+
+        <section class="css-content">
+            <div>
+                <h3>O que é CSS?</h3>
+                <p>CSS (Cascading Style Sheets) <mark>é uma linguagem de estilo</mark> usada para descrever a
+                    apresentação de um documento escrito em HTML</p>
+            </div>
+
+            <div>
+                <h3>Formas de Adicionar o CSS</h3>
+                <h4>Externo</h4>
+                <div class="code-box">
+                    <p>
+                        &lt;!DOCTYPE html&gt; <br>
+                        &lt;html&gt; <br>
+                        &lt;head&gt; <br>
+                        <span class="tab-effect"><mark>&lt;link rel="stylesheet" href="./style.css"&gt;</mark></span>
+                        <br>
+                        &lt;/head&gt; <br>
+                        &lt;/html&gt;
+                    </p>
+                </div>
+                <h4>Interno</h4>
+                <div class="code-box">
+                    <p>
+                        &lt;!DOCTYPE html&gt; <br>
+                        &lt;html&gt; <br>
+                        &lt;head&gt; <br>
+                        <span class="tab-effect"><mark>&lt;style&gt;</mark></span> <br>
+                        <span class="tab-effect"><span class="tab-effect"><mark>body {background-color:
+                                    black;}</mark></span></span> <br>
+                        <span class="tab-effect">&lt;/style&gt;</span> <br>
+                        &lt;/head&gt; <br>
+                        &lt;/html&gt;
+                    </p>
+                </div>
+                <h4>Inline</h4>
+                <div class="code-box">
+                    <p>
+                        &lt;!DOCTYPE html&gt; <br>
+                        &lt;html&gt; <br>
+                        &lt;body&gt; <br>
+                        <span class="tab-effect">&lt;h1 <mark>style= "color:blue;text-align:center;"</mark>&gt;</span>
+                        <br>
+                        <span class="tab-effect"><span class="tab-effect">This is a heading</span></span> <br>
+                        <span class="tab-effect">&lt;/h1&gt;</span> <br>
+                        &lt;/body&gt; <br>
+                        &lt;/html&gt;
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Sintaxe CSS</h3>
+                <div class="code-box">
+                    <p>
+                        <mark>selector</mark> {<mark>property: value</mark> (declaration);} <br>
+                        h1 {color: blue; font-size: 12px;}
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Exemplo</h3>
+                <div class="code-box">
+                    <p>
+                        p { <br> <span class="tab-effect">color: red;</span> <br> <span class="tab-effect">text-align:
+                            center;</span> <br> }
+                    </p>
+                </div>
+                <ul class="topics">
+                    <li><mark>p</mark>: selector que aponta para a tag &lt;p&gt; do HTML</li>
+                    <li><mark>color</mark>: propriedade, e <mark>red</mark>, o seu respectivo valor</li>
+                    <li><mark>text-align</mark>: propriedade e <mark>center</mark>, o seu respectivo valor</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Seletores CSS</h3>
+                <p>Cada seletor tem um peso, e a soma dos pesos será levada em conta para que determinada declaração
+                    seja mais específica. A cascata perde prioridade e é priorizada a <mark>especificidade da
+                        declaração</mark>.</p>
+                <h4>#id</h4>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            &lt;p <mark>id="exemplo"</mark>&gt;Hello World!&lt;/p&gt;
+                        </p>
+                    </div>
+                    <div class="code-box">
+                        <p>
+                            <mark>#exemplo</mark> { <br> <span class="tab-effect">text-align: center;</span> <br> }
+                        </p>
+                    </div>
+                </div>
+                <h4>.class</h4>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            &lt;h1 <mark>class="center"</mark>&gt;Red Heading&lt;/h1&gt;
+                        </p>
+                    </div>
+                    <div class="code-box">
+                        <p>
+                            <mark>.center</mark> { <br> <span class="tab-effect">color: red;</span> <br> }
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Hierarquia dos Seletores</h3>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            &lt;p <mark>id="unico"</mark>&gt;O id é único.&lt;/p&gt; <br>
+                            &lt;p <mark>class="qualquer"</mark>&gt;A class específica.&lt;/p&gt; <br> &lt;p&gt;Frase
+                            genérica.&lt;/p&gt;
+                        </p>
+                    </div>
+                    <div class="code-box">
+                        <p>
+                            <mark>#unico</mark> {color: blue;} <br>
+                            <mark>.qualquer</mark> { color: red;} <br>
+                            p {color: black;}
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-id">O id é único.</p>
+                        <p class="result-class">A class é específica.</p>
+                        <p class="result-text">Frase genérica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Seletor Universal</h3>
+                <p>Aplica para todos os elementos dentro do seletor, muito usado para resetar "margin" e "padding" do
+                    padrão dos navegadores.</p>
+                <div class="code-box">
+                    <p>
+                        <mark>*</mark> { <br> <span class="tab-effect">text-align: center;</span> <br> }
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Agrupamento de Seletores</h3>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            h1 {color: red;} <br>
+                            h3 {color: red;} <br>
+                            p {color: red;}
+                        </p>
+                    </div>
+                    <div class="code-box">
+                        <p>
+                            <mark>h1, h3, p</mark> {color: red;}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Resumo dos Seletores</h3>
+                <ul class="topics">
+                    <li><mark>#firstname</mark>: Seleciona o elemento com id="firstname"</li>
+                    <li><mark>.intro</mark>: Seleciona os elementos com class="intro"</li>
+                    <li><mark>p .intro</mark>: Seleciona apenas elementos &lt;p&gt; com class="intro"</li>
+                    <li><mark>*</mark>: Seleciona todos os elementos</li>
+                    <li><mark>p</mark>: Seleciona todos os elementos &lt;p&gt;</li>
+                    <li><mark>div, p</mark>: Seleciona todos os elementos &lt;div&gt; e todos os &lt;p&gt;</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Pseudo-Classes</h3>
+                <p>São utilizadas para definir <mark>estados específicos</mark> de um elemento</p>
+                <ul class="topics">
+                    <li><mark>:hover</mark>: Aplica estilos quando o mouse passa sobre um elemento</li>
+                    <li><mark>:active</mark>: Aplica estilos quando um elemento está sendo ativado pelo usuário (como
+                        quando um botão é pressionado)</li>
+                    <li><mark>:focus</mark>: Aplica estilos quando um elemento tem foco, como quando um campo de entrada
+                        de texto está pronto para receber entrada do usuário</li>
+                    <li><mark>:first-child</mark>: Aplica estilos ao primeiro filho de um elemento pai</li>
+                    <li><mark>:last-child</mark>: Aplica estilos ao último filho de um elemento pai</li>
+                    <li><mark>:nth-child(x)</mark>: Aplica estilos a filhos de um elemento pai em uma ordem específica
+                        (por exemplo, um número específico de um filho ou até mesmo filhos pares ou ímpares)</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Exemplo de Estados de um Link</h3>
+                <div class="code-box">
+                    <p>
+                        /* unvisited link */ <br>
+                        <mark>a:link</mark> {color:#FF0000;} <br>
+                        /* visited link */ <br>
+                        <mark>a:visited</mark> {color:#00FF00;} <br>
+                        /* mouse over link */ <br>
+                        <mark>a:hover</mark> {color:#FF00FF;} <br>
+                        /* selected link */ <br>
+                        <mark>a:active</mark> {color:#0000FF;}
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Pseudo-Elementos</h3>
+                <p>São usados para adicionar <mark>estilos especiais</mark> a determinadas partes de um elemento. Usado
+                    para estilizar a primeira letra ou linha de um elemento, ou até mesmo inserir conteúdo antes ou
+                    depois de um elemento, por exemplo.</p>
+                <h4>::before e ::after</h4>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            /* Pode adicionar um ícone decorativo antes e depois de um texto */ <br> p::before, p::after
+                            { <br> <span class="tab-effect">content:"★"</span> <br> }
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-before-example">Oiee, aqui é a Amanda!</p>
+                    </div>
+                </div>
+                <h4>::first-letter</h4>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            /* Permite estilizar a primeira letra de um bloco de texto */ <br> p::first-letter { <br>
+                            <span class="tab-effect">font-size: 16px;</span> <br> <span class="tab-effect">font-weight:
+                                500;</span> <br> }
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-first-letter-example">Era uma vez</p>
+                    </div>
+                </div>
+                <h4>::first-line</h4>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            /* Permite estilizar a primeira linha de um bloco de texto, que pode ser útil para aplicar
+                            estilos de abertura em artigos e postagens de blog */ <br> p::first-line { <br> <span
+                                class="tab-effect">color: blue</span> <br> <span class="tab-effect">font-variant:
+                                small-caps;</span> <br> }
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-first-line-example">Primeira linha do artigo. <br> Restante do texto. <br> Mais
+                            um pouco de texto.</p>
+                    </div>
+                </div>
+                <h4>::selection</h4>
+                <div class="code-box">
+                    <p>
+                        /* Aplica estilos ao texto selecionado pelo usuário */ <br> ::selection { <br> <span
+                            class="tab-effect">color: white</span> <br> <span class="tab-effect">background-color:
+                            black;</span> <br> }
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Modelo CSS Box</h3>
+                <div class="box-css-model">
+                    <p>Margin</p>
+                    <div class="border-box">
+                        <p>Border</p>
+                        <div class="padding-box">
+                            <p>Padding</p>
+                            <div class="content-box">
+                                <p>Content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
