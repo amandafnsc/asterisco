@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./assets/logo-asterisco.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Front - Asterisco</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#hero">
+                    <img class="logo-icon" src="./assets/logo-asterisco.svg" alt="ícone de um asterisco">
+                    <p class="logo-text">asterisco</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="html-content">
+            <div class="new-topic">
+                <h2 class="subtitle">O que é HTML?</h2>
+                <p>HTML (HyperText Markup Language) <mark>é uma linguagem de marcação</mark> usada para apresentar
+                    informação na Web usando o protocolo HTTP</p>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Estrutura de uma página Web</h2>
+                <div class="structure-html">
+                    <p>&lt;html&gt;</p>
+                    <div class="structure-head">
+                        <p>&lt;head&gt;</p>
+                        <div class="structure-title">
+                            <p>&lt;title&gt; page title &lt;/title&gt;</p>
+                        </div>
+                    </div>
+                    <div class="structure-body">
+                        <p>&lt;body&gt;</p>
+                        <div class="structure-tags">
+                            <p>&lt;h1&gt;this is heading&lt;/h1&gt;</p>
+                        </div>
+                        <div class="structure-tags">
+                            <p>&lt;p&gt;this is paragraph&lt;/p&gt;</p>
+                        </div>
+                        <div class="structure-tags">
+                            <p>&lt;p&gt;this is another paragraph&lt;/p&gt;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">O que é uma linguagem de marcação?</h2>
+                <p>Uma linguagem de marcação é um conjunto de códigos aplicados a um texto ou a dados, a fim de
+                    adicionar informações particulares sobre esse texto ou dado, ou sobre trechos específicos</p>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Tags</h2>
+                <ul class="topics">
+                    <li>
+                        O HTML utiliza etiquetas, marcações que são conhecidas como Tags, que consistem em breves
+                        instruções tendo uma marca de início e outra de fim</li>
+                    <li>
+                        Estas tags determinam a formatação do texto, imagens e demais elementos que compõem uma página
+                        HTML.</li>
+                    <li>
+                        Em HTML as tags iniciam com símbolo &lt; e terminam com o símbolo /&gt;</li>
+                </ul>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Estrutura de um elemento HTML</h2>
+                <div class="code-box">
+                    <p>
+                        &lt;element name <mark>(start tag)</mark>&gt; <br> <span class="tab-effect">Content of
+                            Element</span> <br> &lt;/element name <mark>(closing tag)</mark>&gt;
+                    </p>
+                </div>
+                <div class="code-box">
+                    <p>
+                        &lt;element name attribute name = "value" <mark>(attribute)</mark>&gt; <br> <span
+                            class="tab-effect">Content of Element</span> <br> &lt;/element name&gt;</p>
+                </div>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Tags Básicas</h2>
+                <ul class="topics">
+                    <li>
+                        <mark>&lt;html&gt;</mark>: Define o início de um documento HTML e indica ao navegador que todo
+                        conteúdo posterior deve ser tratado como uma série de códigos HTML
+                    </li>
+                    <li>
+                        <mark>&lt;head&gt;</mark>: Define o cabeçalho de um documento HTML. Este cabeçalho traz
+                        informações sobre o documento que está sendo aberto. Local em que são listados metadados (dados
+                        que povêem infos s/ outros dados). Informação oculta para a tela do usuário, mas reconhecida
+                        pelo navegador
+                    </li>
+                    <li>
+                        <mark>&lt;body&gt;</mark>: Define o conteúdo principal, o corpo do documento. Esta é a parte do
+                        documento HTML que é exibida no navegador. No corpo podem-se definir propriedades comuns a toda
+                        a página, como cor de fundo, margens, entre outras formatações
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Cabeçalho</h2>
+                <p>Dentro do cabeçalho (tag "&lt;head&gt;") podemos encontrar:</p>
+                <ul class="topics">
+                    <li>
+                        <mark>&lt;title&gt;</mark>: Define o título da página, que é exibido na barra de título dos
+                        browsers
+                    </li>
+                    <li>
+                        <mark>&lt;style&gt;</mark>: Define formatação em CSS
+                    </li>
+                    <li>
+                        <mark>&lt;script&gt;</mark>: Define programação de certas funções em página com scripts, e pode
+                        colocar funções de JavaScript
+                    </li>
+                    <li>
+                        <mark>&lt;link&gt;</mark>:Define ligações da página com outros arquivos como feeds, CSS, scripts
+                        etc
+                    </li>
+                    <li>
+                        <mark>&lt;meta&gt;</mark>: Define propriedades da página, como codificação de caracteres,
+                        descrição da página, autor etc
+                    </li>
+                    <li>
+                        <mark>&lt;base&gt;</mark>: Define endereço de referência (base) para a utilização de caminhos
+                        com endereçamento relativo no documento html
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Exemplos</h2>
+                <div class="code-box">
+                    <p>
+                        &lt;head&gt; <br> <span class="tab-effect">&lt;link rel="stylesheet"
+                            href="./style.css"&gt;</span> <br> &lt;/head&gt;</p>
+                </div>
+                <div class="code-box">
+                    <p>
+                        &lt;head&gt; <br> <span class="tab-effect">&lt;base href="./assets/" target="_blank"&gt;</span>
+                        <br> &lt;/head&gt; <br> &lt;body&gt; <br> <span class="tab-effect">&lt;img
+                            src="random.png"&gt;</span> <br> &lt;/body&gt;
+                    </p>
+                </div>
+            </div>
+    
+            <div class="html-sections">
+                <h2 class="subtitle">Novas Tags de Seções</h2>
+                <div class="section-body">
+                    <p>&lt;body&gt;</p>
+                    <div class="section-no-content">
+                        <p>&lt;header&gt;</p>
+                    </div>
+                    <div class="section-no-content">
+                        <p>&lt;nav&gt;</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-aside">
+                            <p>&lt;aside&gt;</p>
+                        </div>
+                        <div class="section-main">
+                            <p>&lt;main&gt;</p>
+                            <div class="section">
+                                <p>&lt;section&gt;</p>
+                                <div class="section-article">
+                                    <p>&lt;article&gt;</p>
+                                </div>
+                                <div class="section-article">
+                                    <p>&lt;article&gt;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-aside">
+                            <p>&lt;aside&gt;</p>
+                        </div>
+                    </div>
+                    <div class="section-no-content">
+                        <p>&lt;footer&gt;</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Detalhamento das Tags de Seção</h2>
+                <ul class="topics">
+                    <li>
+                        <mark>&lt;header&gt;</mark>: Representa o cabeçalho de uma página ou de uma seção e normalmente
+                        contém um conjunto de elementos introdutórios ou de navegação, como títulos, logos e menus.
+                    </li>
+                    <li>
+                        <mark>&lt;footer&gt;</mark>: Serve para o rodapé de uma página ou seção e frequentemente contém
+                        informações de autoria, links relacionados, informações de contato e direitos autorais.
+                    </li>
+                    <li>
+                        <mark>&lt;nav&gt;</mark>: Destina-se à navegação principal e é usada para agrupar os principais
+                        links de navegação. Embora uma página possa conter múltiplos elementos, normalmente um é
+                        destinado à navegação principal.
+                    </li>
+                    <li>
+                        <mark>&lt;main&gt;</mark>: Especifica o conteúdo principal de uma página e deve conter o
+                        conteúdo único que não se repete em outras páginas do site. Esse elemento ajuda os leitores de
+                        tela e os mecanismos de busca a entender rapidamente qual é o conteúdo principal de uma página.
+                    </li>
+                    <li>
+                        <mark>&lt;section&gt;</mark>: Define uma seção dentro de um documento e é usada para
+                        <mark>agrupar conteúdos temáticos que, geralmente, têm um título associado</mark>. Serve para
+                        organizar o conteúdo em partes lógicas e pode ser utilizada para segmentar grandes artigos,
+                        capítulos, etc.
+                    </li>
+                    <li>
+                        <mark>&lt;article&gt;</mark>: Especifica um conteúdo autônomo, que poderia ser distribuído
+                        independentemente do resto do site. Exemplos incluem um post de blog, um comentário de usuário
+                        ou qualquer outro item que se destine a ser sindicado
+                    </li>
+                    <li>
+                        <mark>&lt;aside&gt;</mark>: Indica que o conteúdo é tangencialmente relacionado ao conteúdo ao
+                        redor dele, que pode ser considerado separado do conteúdo principal. É frequentemente usado para
+                        barras laterais, chamadas à ação, ou para inserir conteúdo relacionado.
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Corpo</h2>
+                <p>Dentro do corpo (tag "&lt;body&gt;") podemos encontrar diversas outras tags, como por exemplo:</p>
+                <ul class="topics">
+                    <li>
+                        <mark>&lt;h1&gt;,&lt;h2&gt;,... &lt;h6&gt;</mark>: Cabeçalhos e títulos no documento em diversos
+                        tamanhos
+                    </li>
+                    <li>
+                        <mark>&lt;p&gt;</mark>: Novo parágrafo
+                    </li>
+                    <li>
+                        <mark>&lt;br/&gt;</mark>: Quebra de linha
+                    </li>
+                    <li>
+                        <mark>&lt;table&gt;</mark>: Cria uma tabela (linhas são criadas com &lt;tr&gt; e novas células
+                        com &lt;tr&gt;)
+                    </li>
+                    <li>
+                        <mark>&lt;div&gt;</mark>: Determina uma divisão na página
+                    </li>
+                    <li>
+                        <mark>&lt;img&gt;</mark>: Imagem
+                    </li>
+                    <li>
+                        <mark>&lt;a&gt;</mark>: Hiperlink para uma página, ou para um endereço de e-mail
+                    </li>
+                    <li>
+                        <mark>&lt;button&gt;</mark>: Cria um botão
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Formatação de Texto</h2>
+                <ul class="topics">
+                    <li>
+                        <mark>&lt;b&gt;...&lt;/b&gt;</mark>: Aplica o estilo negrito
+                    </li>
+                    <li>
+                        <mark>&lt;i&gt;...&lt;/i&gt;</mark>: Aplica o estilo itálico
+                    </li>
+                    <li>
+                        <mark>&lt;u&gt;...&lt;/u&gt;</mark>: Aplica o estilo sublinhado
+                    </li>
+                    <li>
+                        <mark>&lt;sup&gt;...&lt;/sup&gt;</mark>: Faz com que o texto fique sobrescrito
+                    </li>
+                    <li>
+                        <mark>&lt;sub&gt;...&lt;/sub&gt;</mark>: Faz com que o texto fique subscrito
+                    </li>
+                    <li>
+                        <mark>&lt;pre&gt;...&lt;/pre&gt;</mark>: Utiliza a pré-formatação, ou seja, deixa o texto da
+                        maneira em que foi digitado
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Exemplos</h2>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>&lt;b&gt;&lt;i&gt;&lt;u&gt;Negrito Itálico
+                            Sublin.&lt;/b&gt;&lt;/i&gt;&lt;/u&gt;</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-text"><b><i><u>Negrito Itálico Sublin.</u></i></b></p>
+                    </div>
+                </div>
+    
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>&lt;p&gt;Quebra de Linha &lt;br/&gt; Outra Linha&lt;/p&gt;</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-text">Quebra de Linha <br /> Outra Linha</p>
+                    </div>
+                </div>
+    
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>&lt;p&gt;Linha Horizontal&lt;/p&gt; &lt;hr&gt;</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-text">
+                            Linha Horizontal
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+    
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>&lt;p&gt;The 21&lt;sup&gt;st&lt;/sup&gt; century is from 2001 to
+                            2010.&lt;/p&gt;</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-text">The 21<sup>st</sup> century is from 2001 to 2010.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Citação</h2>
+                <p>
+                    O elemento HTML <mark>&lt;blockquote&gt;</mark> indica que texto incluído é uma longa citação.
+                    Normalmente, este é processado visualmente pelo recuo. A URL para a fonte da citação pode ser dada
+                    usando o atributo <mark>"cite"</mark> (é oculto para o leitor), enquanto uma representação de texto
+                    da fonte pode ser dada usando o <mark>&lt;cite&gt;</mark> elemento. Enquanto que para citações
+                    curtas, use o elemento <mark>&lt;q&gt;</mark>.</p>
+                <div class="code-box">
+                    <p>
+                        &lt;blockquote cite= "https://www.unknown.com"&gt; <br> <span class="tab-effect">&lt;p&gt;Uma
+                            citação bem extensa.&lt;/p&gt;</span> <br> &lt;/blockquote&gt;</p>
+                </div>
+    
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            &lt;p&gt;Como dizia &lt;cite&gt;alguém sábio&lt;/cite&gt;, &lt;q&gt;uma citação
+                            curta&lt;/q&gt;.&lt;/p&gt;</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-text">Como dizia <cite>alguém sábio</cite>, <q>uma citação curta</q>.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Provendo Informações Ocultas/Adicionais</h2>
+                <p>
+                    O elemento HTML <mark>&lt;details&gt;</mark> é usado como uma ferramenta de onde o usuário irá obter
+                    informações adicionais, seguido pelo elemento <mark>&lt;summary&gt;</mark>, o qual é utilizado como
+                    um sumário ou legenda para o conteúdo do primeiro elemento.</p>
+    
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            &lt;details&gt; <br> <span class="tab-effect">&lt;summary&gt;Aqui tem mais
+                                infos&lt;/summary&gt;</span> <br> <span class="tab-effect">&lt;p&gt;mais
+                                infos&lt;/p&gt;</span> <br> &lt;/details&gt;</p>
+                    </div>
+                    <div class="result-box">
+                        <details>
+                            <summary>Aqui tem mais infos</summary>
+                            <p>mais infos</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Tags Semânticas de Formatação</h2>
+                <ul class="topics">
+                    <li>
+                        <mark>&lt;mark&gt;</mark>: Aplica um <mark>highlight</mark> no texto
+                    </li>
+                    <li>
+                        <mark>&lt;em&gt;</mark>: Formata um texto com <em>ênfase</em>
+                    </li>
+                    <li>
+                        <mark>&lt;small&gt;</mark>: Formata um texto com <small>fonte pequena</small>
+                    </li>
+                    <li>
+                        <mark>&lt;strong&gt;</mark>: Formata um texto com <strong>destaque</strong>
+                    </li>
+                    <li>
+                        <mark>&lt;del&gt;</mark>: Formata um texto <del>anulado</del>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Imagens</h2>
+                <ul class="topics">
+                    <li>
+                        Os formatos mais usados são o PNG e o JPG, ambos com compactação de pixels.</li>
+                    <li>
+                        Para referências locais, os arquivos com as imagens deverão estar armazenados no seu Provedor de
+                        Acesso, juntamente com o documento HTML.</li>
+                    <li>
+                        Para inserir uma imagem, uso o tag: <mark>&lt;img&gt;</mark>, que é único, não exigindo um tag
+                        finalizado.</li>
+                </ul>
+                <div class="code-box">
+                    <p>&lt;img src="imagem.png"/&gt;</p>
+                </div>
+                <ul class="topics">
+                    <li>
+                        O elemento <mark>&lt;figure&gt;</mark> HTML representa conteúdo autocontido, potencialmente com
+                        uma legenda opcional, que é especificada usando o <mark>&lt;figcaption&gt;</mark> lemento. A
+                        figura, sua legenda e seu conteúdo são referenciados como uma única unidade (exibir imagens de
+                        qualquer tipo de forma semântica).</li>
+                </ul>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            &lt;figue&gt; <br> <span class="tab-effect">&lt;img src="flower.png" alt="buquê de flores
+                                genéricas em preto e branco"/&gt; <br> <span class="tab-effect">&lt;figcaption&gt;um
+                                    buquê
+                                    de flores bem triste&lt;/figcaption&gt;</span> <br> &lt;/figure&gt;</p>
+                    </div>
+                    <div class="result-box">
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1604079669261-263fd5e55daf?q=80&w=1422&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="buquê de flores genéricas em preto e branco">
+                            <figcaption>Um buquê de flores bem triste</figcaption>
+                        </figure>
+                    </div>
+                </div>
+    
+                <ul class="topics">
+                    <li>
+                        O atributo <mark>alt</mark> descreve a imagem, seja para um leitor de telas (acessibilidade),
+                        seja para o navegador exibir a descrição da imagem quando ela não for corretamente carregada.
+                    </li>
+                    <li>
+                        Quando o alt estiver vazio, um leitor de tela narrará o nome do arquivo da imagem, o que pode
+                        não ser algo muito intuitivo.</li>
+                </ul>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Listas Ordenadas</h2>
+                <ul class="topics">
+                    <li>Listas ordenadas são também denominadas <mark>listas numeradas</mark>, pois, quando um navegador
+                        encontra uma tag iniciando uma lista ordenada, ele passa a mostrar cada item utilizando números,
+                        como 1, 2, 3, e assim sucessivamente.</li>
+                </ul>
+                <div class="code-box">
+                    <p>
+                        &lt;ol&gt; <br>
+                        <span class="tab-effect">&lt;li&gt;primeiro item&lt;/li&gt;</span> <br>
+                        <span class="tab-effect">&lt;li&gt;segundo item&lt;/li&gt;</span> <br>
+                        <span class="tab-effect">&lt;li&gt;terceiro item&lt;/li&gt;</span> <br>
+                        &lt;/ol&gt;
+                    </p>
+                </div>
+    
+                <ul class="topics">
+                    <li>Listas ordenadas podem receber atributos, como start e type.</li>
+                </ul>
+    
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>
+                            &lt;ol start="4"&gt; <br>
+                            <span class="tab-effect">&lt;li&gt;quarto item&lt;/li&gt;</span> <br>
+                            <span class="tab-effect">&lt;li&gt;quinto item&lt;/li&gt;</span> <br>
+                            &lt;/ol&gt;
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <ol start="4">
+                            <li>quarto item</li>
+                            <li>quinto item</li>
+                        </ol>
+                    </div>
+                </div>
+    
+                <p>Valores para o atributo type:</p>
+                <ul class="topics">
+                    <li>1: Utiliza números arábicos para a listagem (padrão). Exemplo: 1, 2, 3.</li>
+                    <li>A: Utiliza letras maiúsculas para a listagem. Exemplo: A, B, C.</li>
+                    <li>a: Utiliza letras minúsculas para a listagem. Exemplo: a, b, c.</li>
+                    <li>I: Utiliza números romanos em maiúsculas para a listagem. Exemplo: I, II, III.</li>
+                    <li>i: Utiliza números romanos em minúsculas para a listagem. Exemplo: i, ii, iii.</li>
+                </ul>
+    
+                <div class="code-box">
+                    <p>&lt;ol type="a"&gt; <br>
+                        <span class="tab-effect">&lt;li&gt;item a&lt;/li&gt;</span> <br>
+                        <span class="tab-effect">&lt;li&gt;item b&lt;/li&gt;</span> <br>
+                        <span class="tab-effect">&lt;li&gt;item c&lt;/li&gt;</span> <br> &lt;/ol&gt;
+                    </p>
+                </div>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Lista Não Ordenadas</h2>
+                <ul class="topics">
+                    <li>Listas não ordenadas são muito parecidas com as ordenadas. A única diferença é o fato de
+                        elas não definirem explicitamente uma ordem, como é no caso as numeradas.</li>
+                    <li>Eles são formados por símbolos, que podem ser bola, quadrado, e uma bola vazia.</li>
+                </ul>
+                <div class="code-box">
+                    <p>&lt;ul&gt; <br>
+                        <span class="tab-effect">&lt;li&gt;item&lt;/li&gt;</span> <br>
+                        <span class="tab-effect">&lt;li&gt;item&lt;/li&gt;</span> <br>
+                        <span class="tab-effect">&lt;li&gt;item&lt;/li&gt;</span> <br> &lt;/ul&gt;
+                    </p>
+                </div>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Lista de Definição</h2>
+                <ul class="topics">
+                    <li>Composta por termos e suas respectivas definições</li>
+                </ul>
+                <div class="code-box">
+                    <p>&lt;dl&gt; <br>
+                        <span class="tab-effect">&lt;dt&gt;the first item&lt;/dt&gt;</span> <br>
+                        <span class="tab-effect"></span><span class="tab-effect">&lt;dd&gt;first term
+                            definition&lt;/dd&gt;</span></span> <br> &lt;/dl&gt;
+                    </p>
+                </div>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Links</h2>
+                <p>Os links servem para criar termos que permitem a interligação entre
+                    documentos HTML locais, externos, a outros arquivos, e-mails e partes diferentes de documentos
+                    HTML.</p>
+                <ul class="topics">
+                    <li><mark>Links Internos</mark>: Direcionam o usuário para outra página ou recurso dentro do
+                        mesmo site. São fundamentais para a navegação interna e a estrutura SEO de um site.</li>
+                    <li><mark>Links Externos</mark>: : Levam o usuário para um site ou recurso fora do domínio
+                        atual. São úteis para fornecer referências ou direcionar usuários para recursos adicionais.
+                    </li>
+                    <li><mark>Links de Âncora</mark>: Permitem a navegação para uma seção específica dentro de uma
+                        página, usando o atributo href com um identificador de elemento (id), precedido por #.</li>
+                    <li><mark>Links de Email (mailto:)</mark>: Quando clicados, tentam abrir o cliente de email
+                        padrão do usuário com um endereço de email especificado como destinatário.</li>
+                    <li><mark>Links de Telefone (tel:)</mark>: Permitem discar um número de telefone em dispositivos
+                        com capacidade de fazer chamadas.</li>
+                    <li><mark>Links para Download</mark>: Direcionam o navegador para baixar um recurso específico,
+                        ao invés de exibi-lo no navegador. Isso pode ser especificado com o atributo download em
+                        links apontando para arquivos.</li>
+                    <li><mark>Links de Aplicativos</mark>: Usados para abrir um aplicativo específico ou página
+                        dentro de um aplicativo, frequentemente utilizados em plataformas móveis.</li>
+                    <li><mark>Links Dinâmicos</mark>: Gerados dinamicamente com JavaScript para realizar uma ação ou
+                        mudar o conteúdo da página sem carregar uma nova página.</li>
+                    <li><mark>Links Sociais</mark>: Direcionam para perfis ou páginas em plataformas de mídia
+                        social. São essenciais para promover a presença online em redes sociais.</li>
+                </ul>
+    
+                <div class="code-box">
+                    <p>&lt;a href= "https://www.link.com"&gt; <br> <span class="tab-effect">&lt;img
+                            src="imagem.png"/&gt;</span> <br> &lt;/a&gt;</p>
+                </div>
+                <div class="code-box">
+                    <p>&lt;a href= "mailto: someone@gmail.com"&gt; <br> <span class="tab-effect">Send
+                            email</span> <br> &lt;/a&gt;</p>
+                </div>
+                <div class="code-box">
+                    <p>
+                        &lt;h2&gt;<mark>Endereçamento Absoluto</mark>&lt;/h2&gt; <br> <br>
+                        &lt;p&gt;&lt;a href= "https://www.google.com/"&gt; <br> <span class="tab-effect">Google</span>
+                        <br> &lt;/a&gt;&lt;/p&gt;
+                    </p>
+                </div>
+                <div class="code-box">
+                    <p>
+                        &lt;h2&gt;<mark>Endereçamento Relativo</mark>&lt;/h2&gt; <br> <br>
+                        &lt;p&gt;&lt;a href="./random.docs"&gt; <br> <span class="tab-effect">Docs</span> <br>
+                        &lt;/a&gt;&lt;/p&gt;
+                    </p>
+                </div>
+    
+                <p>O parâmetro NAME serve para marcar um ponto para possíveis desvios.
+                    Quando desviamos para um determinado ponto dentro de um documento, indicamos este nome com
+                    um "#".</p>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Tabelas</h2>
+                <ul class="topics">
+                    <li>Comumente utilizadas para organizar dados em uma página</li>
+                    <li>Tag <mark>&lt;table&gt;...&lt;/table&gt;</mark>: criação de uma tabela</li>
+                    <li>A tag <mark>&lt;tr&gt;</mark> indica uma linha na tabela</li>
+                    <li>Cada linha da tabela pode conter várias células, e portanto, é necessário que se faça uso de
+                        uma marcação que indique exatamente o ponto de quebra de uma linha e início de outra</li>
+                    <li>A tag <mark>&lt;td&gt;</mark> especifica a células de dados de uma tabela</li>
+                    <li>Por se tratar de dados comuns (e não cabeçalhos), essas células possuem seu conteúdo escrito
+                        em fonte normal, sem nenhum destaque e alinhamento à esquerda</li>
+                    <li>Um atributo opcional para ser usado com table é o atributo <mark>border</mark>. Se ele
+                        estiver presente, a tabela será formatada com linhas de borda, podendo receber um valor que
+                        vai estabelecer qual a espessura da linha d aborda da tabela</li>
+                </ul>
+    
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>&lt;table&gt; <br>
+                            <span class="tab-effect">&lt;tr&gt;</span> <br>
+                            <span class="tab-effect"></span><span class="tab-effect">&lt;td&gt;&lt;/td&gt;</span></span>
+                            <br>
+                            <span class="tab-effect"></span><span
+                                class="tab-effect">&lt;th&gt;Mateus&lt;/th&gt;</span></span> <br>
+                            <span class="tab-effect"></span><span
+                                class="tab-effect">&lt;th&gt;Amanda&lt;/th&gt;</span></span> <br>
+                            <span class="tab-effect">&lt;/tr&gt;</span> <br>
+                            <span class="tab-effect">&lt;tr&gt;</span> <br>
+                            <span class="tab-effect"></span><span
+                                class="tab-effect">&lt;th&gt;Notas&lt;/th&gt;</span></span> <br>
+                            <span class="tab-effect"></span><span
+                                class="tab-effect">&lt;td&gt;9.8&lt;/td&gt;</span></span>
+                            <br>
+                            <span class="tab-effect"></span><span
+                                class="tab-effect">&lt;td&gt;9.9&lt;/td&gt;</span></span>
+                            <br>
+                            <span class="tab-effect">&lt;/tr&gt;</span> <br>
+                            <span class="tab-effect">&lt;tr&gt;</span> <br>
+                            <span class="tab-effect"></span><span class="tab-effect">&lt;th&gt;N. de
+                                Matrícula&lt;/th&gt;</span></span> <br>
+                            <span class="tab-effect"></span><span
+                                class="tab-effect">&lt;td&gt;445347&lt;/td&gt;</span></span> <br>
+                            <span class="tab-effect"></span><span
+                                class="tab-effect">&lt;td&gt;887656&lt;/td&gt;</span></span> <br>
+                            <span class="tab-effect">&lt;/tr&gt;</span> <br> &lt;/table&gt;
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <table class="table-example">
+                            <tr>
+                                <td></td>
+                                <th>Mateus</th>
+                                <th>Amanda</th>
+                            </tr>
+                            <tr>
+                                <th>Notas</th>
+                                <td>9.8</td>
+                                <td>9.9</td>
+                            </tr>
+                            <tr>
+                                <th>N. de Matrícula</th>
+                                <td>445347</td>
+                                <td>887656</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="new-topic">
+                <h2 class="subtitle">Atributos Colspan e Rowspan</h2>
+                <ul class="topics">
+                    <li>Colspan é a abreviação para "column span"</li>
+                    <li>Colspan é usada na tag <mark>&lt;td&gt;</mark> para indicar quantas <mark>colunas</mark> estarão
+                        contidas em uma célula em uma ação de merge</li>
+                </ul>
+    
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>&lt;table&gt; <br>
+                            <span class="tab-effect">&lt;tr&gt;</span> <br>
+                            <span class="tab-effect"></span><span class="tab-effect">&lt;td colspan="3"&gt;Célula
+                                1&lt;/td&gt;</span></span> <br>
+                            <span class="tab-effect">&lt;/tr&gt;</span> <br>
+                            <span class="tab-effect">&lt;tr&gt;</span> <br>
+                            <span class="tab-effect"></span><span class="tab-effect">&lt;td&gt;Célula
+                                2&lt;/td&gt;</span></span> <br>
+                            <span class="tab-effect"></span><span class="tab-effect">&lt;td&gt;Célula
+                                3&lt;/td&gt;</span></span>
+                            <br>
+                            <span class="tab-effect"></span><span class="tab-effect">&lt;td&gt;Célula
+                                4&lt;/td&gt;</span></span> <br>
+                            &lt;/table&gt;
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <table class="table-example">
+                            <tr>
+                                <td colspan="3">Célula 1</td>
+                            </tr>
+                            <tr>
+                                <td>Célula 2</td>
+                                <td>Célula 3</td>
+                                <td>Célula 4</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+    
+                <ul class="topics">
+                    <li>Rowspan é a abreviação para “rows span"</li>
+                    <li>Rowspan é usada na tag <mark>&lt;td&gt;</mark> para indicar quantas <mark>linhas</mark> estarão
+                        contidas em uma célula em uma ação de merge</li>
+                </ul>
+    
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p>&lt;table&gt; <br>
+                            <span class="tab-effect">&lt;tr&gt;</span> <br>
+                            <span class="tab-effect"></span><span class="tab-effect">&lt;td rowspan="3"&gt;Célula
+                                1&lt;/td&gt;</span></span> <br>
+                            <span class="tab-effect"></span><span class="tab-effect">&lt;td&gt;Célula
+                                2&lt;/td&gt;</span></span> <br>
+                            <span class="tab-effect">&lt;/tr&gt;</span> <br>
+                            <span class="tab-effect">&lt;tr&gt;</span> &lt;td&gt;Célula 3&lt;/td&gt; &lt;/tr&gt;</span>
+                            <br>
+                            <span class="tab-effect">&lt;tr&gt;</span> &lt;td&gt;Célula 4&lt;/td&gt; &lt;/tr&gt;</span>
+                            <br>
+                            &lt;/table&gt;
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <table class="table-example">
+                            <tr>
+                                <td rowspan="3">Célula 1</td>
+                                <td>Célula 2</td>
+                            </tr>
+                            <tr>
+                                <td>Célula 3</td>
+                            </tr>
+                            <tr>
+                                <td>Célula 4</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
