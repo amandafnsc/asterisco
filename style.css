@@ -43,6 +43,8 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid var(--lighter-color);
 }
 
+/* nav */
+
 nav {
     padding: 17px 0px;
     position: fixed;
@@ -70,6 +72,8 @@ nav {
     line-height: 12px;
     margin: auto 0px;
 }
+
+/* main */
 
 main {
     padding: 0px 20px;
@@ -119,6 +123,8 @@ p {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
+
+/* hero */
 
 #hero {
     max-width: 900px;
@@ -181,6 +187,7 @@ p {
 }
 
 /* footer */
+
 footer {
     background-color: var(--border-code-color);
 }
@@ -220,7 +227,7 @@ footer p {
 }
 
 .about p, .more p{
-    width: 600px;
+    max-width: 600px;
 }
 
 .about a {
@@ -264,6 +271,10 @@ footer p {
 
     .html-card, .css-card, .js-card {
         margin: auto;
+    }
+
+    .about p, .more p{
+        max-width: 710px;
     }
 }
 
