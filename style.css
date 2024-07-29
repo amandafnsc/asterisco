@@ -272,9 +272,11 @@ footer p {
     .html-card, .css-card, .js-card {
         margin: auto;
     }
+}
 
+@media (max-width: 1010px) {
     .about p, .more p{
-        max-width: 710px;
+        max-width: 890px;
     }
 }
 
