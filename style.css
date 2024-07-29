@@ -180,10 +180,31 @@ p {
     text-decoration: none;
 }
 
+/* footer */
+footer {
+    background-color: var(--border-code-color);
+}
+
+footer div {
+    margin: auto;
+    max-width: 900px;
+    padding: 20px 40px;
+}
+
+footer img {
+    display: block;
+    margin: 0px auto 10px;
+    width: 20px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 500;
+}
+
 /* homepage */
 
-.about {
-    box-sizing: border-box;
+.about, .more {
     color: var(--darkest-color);
     display: flex;
     flex-wrap: wrap;
@@ -193,11 +214,12 @@ p {
     padding: 0px 40px 0px;
 }
 
-.about h2 {
+.about h2, .more h2 {
+    width: 130px;
     margin-right: 50px;
 }
 
-.about p {
+.about p, .more p{
     width: 600px;
 }
 
@@ -206,18 +228,43 @@ p {
     color: var(--darkest-color);
 }
 
-.content-cards h2{
+.more a {
+    background-color: var(--js-color);
+    color: var(--darkest-color);
+}
+
+.content-cards {
+    max-width: 900px;
+    margin: auto;
+    padding: 0px 40px;
+}
+
+.content-cards h2, .subtitle{
     text-align: center;
+}
+
+.subtitle{
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
 .cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     gap: 20px;
-    margin: 0px 0px 100px;
-    padding: 20px 40px;
+    margin: 0px auto 80px;
+    padding: 20px 0px;
+}
+
+@media (max-width: 830px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .html-card, .css-card, .js-card {
+        margin: auto;
+    }
 }
 
 .html-card, .css-card, .js-card {
@@ -225,12 +272,9 @@ p {
     border: 1px solid var(--border-code-color);
     border-radius: 20px;
     box-sizing: border-box;
-    color: var(--darkest-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: auto;
-    max-width: 250px;
     padding: 10px 20px 25px;
     transition: 0.3s;
 }
@@ -246,11 +290,11 @@ p {
     padding-top: 10px;
 }
 
-.button-area a {
+.arrow-button {
     padding-left: 20px;
 }
 
-.button-area a:hover {
+.arrow-button:hover {
     animation-duration: 0.5s;
     animation-name: slidein;
 }
