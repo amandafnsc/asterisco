@@ -303,24 +303,18 @@ footer p {
     padding-top: 10px;
 }
 
-.arrow-button {
-    padding-left: 20px;
-}
-
 .arrow-button:hover {
     animation-duration: 0.5s;
-    animation-name: slidein;
+    animation-name: move-left;
 }
 
-@keyframes slidein {
+@keyframes move-left {
     from {
-      margin-left: 0px;
-      width: 20%;
+      padding-right: 20px;
     }
   
     to {
-      margin-left: 10px;
-      width: 11%;
+      padding-right: 0px;
     }
 }
 
