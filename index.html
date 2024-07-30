@@ -21,28 +21,51 @@
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="#hero">
-                    <img class="logo-icon" src="./assets/logo-asterisco.svg" alt="ícone de um asterisco">
-                    <p class="logo-text">asterisco</p>
-                </a>
-            </div>
-
-            <div id="user">
-                <img src="./assets/logo-asterisco.svg" alt="Avatar" id="user_avatar">
-                <p id="user_infos">
-                    <span class="item-description"></span>
-                </p>
-            </div>
-
-            <div id="side-items">
-                <li class="side-item">
-                    <a href=""></a>
-                </li>
-            </div>
-        </nav>
+        <div class="logo">
+            <a href="#hero">
+                <img class="logo-icon" src="./assets/logo-asterisco.svg" alt="ícone de um asterisco">
+                <p class="logo-text">asterisco</p>
+            </a>
+        </div>
     </header>
+
+    <nav>
+        <div id="user">
+            <img src="./assets/logo-asterisco.svg" alt="Avatar" id="user-avatar">
+            <p id="user_infos">
+                <span class="item-description">Asterisco</span>
+            </p>
+        </div>
+
+        <div id="side-items">
+            <li class="side-item active">
+                <a href="">
+                    <i class="fa-solid fa-house" style="color: #1e1c23;"></i>
+                    <span class="item-description">INICIO</span>
+                </a>
+            </li>
+            <li class="side-item">
+                <a href="/html-content.html">
+                    <i class="fa-solid fa-code" style="color: #1e1c23;"></i>
+                    <span class="item-description">HTML</span>
+                </a>
+            </li>
+            <li class="side-item">
+                <a href="/css-content.html">
+                    <i class="fa-solid fa-hashtag" style="color: #1e1c23;"></i>
+                    <span class="item-description">CSS</span>
+                </a>
+            </li>
+            <li class="side-item">
+                <a href="/js-content.html">
+                    <i class="fa-brands fa-js" style="color: #1e1c23;"></i>
+                    <span class="item-description">JS</span>
+                </a>
+            </li>
+        </div>
+
+        <button id="open-btn"><i class="fa-solid fa-chevron-right" style="color: #1e1c23;"></i></button>
+    </nav>
 
     <main>
         <section id="hero">
