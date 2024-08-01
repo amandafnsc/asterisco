@@ -153,6 +153,13 @@ nav .material-symbols-outlined {
     gap: 14px;
 }
 
+@media (max-width: 768px) {
+    nav .material-symbols-outlined {
+        width: 16px;
+        height: 16px;
+    }
+}
+
 /* main */
 
 main {
@@ -278,7 +285,7 @@ footer {
 footer div {
     margin: auto;
     max-width: 900px;
-    padding: 20px 40px;
+    padding: 20px 40px 20px 112px;
 }
 
 footer img {
@@ -356,12 +363,6 @@ footer p {
 
     .html-card, .css-card, .js-card {
         margin: auto;
-    }
-}
-
-@media (max-width: 1010px) {
-    .about p, .more p{
-        max-width: 890px;
     }
 }
 
