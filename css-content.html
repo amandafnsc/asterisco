@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="./assets/logo-asterisco.svg">
@@ -20,15 +21,44 @@
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="/index.html">
-                    <img class="logo-icon" src="./assets/logo-asterisco.svg" alt="ícone de um asterisco">
-                    <p class="logo-text">asterisco</p>
-                </a>
-            </div>
-        </nav>
+        <div class="logo">
+            <a href="/index.html">
+                <img class="logo-icon" src="./assets/logo-asterisco.svg" alt="ícone de um asterisco">
+                <p class="logo-text">asterisco</p>
+            </a>
+        </div>
     </header>
+
+    <nav id="sidebar">
+        <a id="menu-btn"><span class="material-symbols-outlined">menu</span></a>
+
+        <div id="side-items">
+            <li class="side-item">
+                <a href="/index.html">
+                    <span class="material-symbols-outlined">home</span>
+                    <span class="item-description">Início</span>
+                </a>
+            </li>
+            <li class="side-item">
+                <a href="/html-content.html">
+                    <span class="material-symbols-outlined">code</span>
+                    <span class="item-description">HTML</span>
+                </a>
+            </li>
+            <li class="side-item active">
+                <a href="">
+                    <span class="material-symbols-outlined">tag</span>
+                    <span class="item-description">CSS</span>
+                </a>
+            </li>
+            <li class="side-item">
+                <a href="/js-content.html">
+                    <span class="material-symbols-outlined">data_object</span>
+                    <span class="item-description">JS</span>
+                </a>
+            </li>
+        </div>
+    </nav>
 
     <main>
         <section id="hero">
@@ -316,6 +346,8 @@
             </div>
         </section>
     </main>
+
+    <script src="/script.js"></script>
 </body>
 
 </html>
