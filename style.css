@@ -46,7 +46,8 @@ body::-webkit-scrollbar-thumb {
 /* header */
 
 .logo {
-    padding: 17px 0px;
+    margin: 17px 0px;
+    padding-left: 36px;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -74,28 +75,15 @@ body::-webkit-scrollbar-thumb {
 
 /* nav */
 
-nav {
-    position: fixed;
+#sidebar {
     background-color: var(--bg-code-color);
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
     padding: 12px;
-}
-
-#user {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 24px;
-}
-
-#user-infos {
-    display: flex;
-    flex-direction: column;
-}
-
-#user-avatar {
-    width: 30px;
+    position: fixed;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    min-width: 72px;
 }
 
 #side-items {
@@ -111,6 +99,21 @@ nav {
     cursor: pointer;
 }
 
+.side-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .material-symbols-outlined {
+    color: var(--darkest-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
 .side-item.active {
     background-color: var(--border-code-color);
 }
@@ -119,10 +122,41 @@ nav {
     background-color: var(--lighter-color);
 }
 
+#menu-btn {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0px 24px;
+    cursor: pointer;
+}
+
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
+    height: 0px;
+}
+
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 100px;
+    height: auto;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
+}
+
 /* main */
 
 main {
-    padding: 0px 20px;
+    padding: 0px 20px 0px 92px;
 }
 
 ::selection {
