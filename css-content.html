@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="./assets/logo-asterisco.svg">
@@ -332,16 +333,177 @@
             <div class="new-topic">
                 <h3>Modelo CSS Box</h3>
                 <div class="box-css-model">
-                    <p>Margin</p>
-                    <div class="border-box">
-                        <p>Border</p>
-                        <div class="padding-box">
-                            <p>Padding</p>
-                            <div class="content-box">
-                                <p>Content</p>
+                    <p><small>1. Top</small></p>
+                    <div class="left-right">
+                        <p><small>4. Left</small></p>
+                        <div class="margin-box">
+                            <p>Margin</p>
+                            <div class="border-box">
+                                <p>Border</p>
+                                <div class="padding-box">
+                                    <p>Padding</p>
+                                    <div class="content-box">
+                                        <p>Content <br> <small>(width x height)</small></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <p><small>2. Right</small></p>
                     </div>
+                    <p><small>3. Bottom</small></p>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h3>Manipulando Margin e Padding</h3>
+                <p>Para escrever o valor dessas propriedades é necessário uma lógica na ordem das informações.</p>
+                <div class="code-box">
+                    <p>
+                        padding-top: 56px; <br>
+                        padding-right: 0px; <br>
+                        padding-bottom: 50px; <br>
+                        padding-left: 20px;
+                    </p>
+                </div>
+                <p>Quando o valor é o mesmo para todos, basta colocar todos os valores em uma única propriedade.</p>
+                <div class="code-box">
+                    <p>padding: 10px; /* aplica para todos os lados da caixa */</p>
+                </div>
+                <p>Mas quando os valores começam a divergir, existe uma ordem certa e a quantidade correta de valores para corresponder.</p>
+                <h4>2 Valores (Top-Bottom e Right-Left)</h4>
+                <div class="code-box">
+                    <p>padding: 10px auto; <br> /* top: 10px  right: auto  bottom: 10px  left: auto */</p>
+                </div>
+                <h4>3 Valores (Top, Right-Left e Bottom)</h4>
+                <div class="code-box">
+                    <p>padding: 10px auto 20px; <br> /* top: 10px  right: auto  bottom: 20px  left: auto */</p>
+                </div>
+                <h4>4 Valores (Top, Right, Bottom e Left)</h4>
+                <div class="code-box">
+                    <p>padding: 56px 0px 50px 20px; <br> /* top: 56px  right: 0px  bottom: 50px  left: 20px */</p>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h3>Tabelas com CSS</h3>
+                <p>Entendendo alguns conceitos básicos de CSS com a estrutura de uma tabela.</p>
+                <h4>Bordas (Border)</h4>
+                <div class="code-box">
+                    <p>table, th, td { <br> <span class="tab-effect"><mark>border</mark>: 1px solid red; </span> <br> <span class="tab-effect"><mark>border-spacing</mark>: 15px; /* espaço entre as células */</span> <br> }</p>
+                </div>
+                <h4>Unificando Bordas</h4>
+                <div class="code-box">
+                    <p>table { <br> <span class="tab-effect"><mark>border-collapse</mark>: collapse;</span> <br> }</p>
+                </div>
+                <h4>Tamanho (Width e Height)</h4>
+                <div class="code-box">
+                    <p>
+                        table { <br> <span class="tab-effect"><mark>width</mark>: 100%;</span> <br> <span class="tab-effect">/* define a ocupação total da largura em relação ao container pai */</span> <br> } <br> 
+                        th { <br> <span class="tab-effect"><mark>height</mark>: 70px;</span> <br> <span class="tab-effect">/* define a célulada tabela para ocupar 70 pixels */ <br> }</span> 
+                        </p>
+                </div>
+                <h4>Alinhamento Horizontal e Vertical</h4>
+                <ul class="topics">
+                    <li>Horizontal: propriedade <em>text-align</em> para os conteúdos de &lt;th&gt; ou &lt;td&gt;, com os valores <strong>left, center ou right</strong>. Essa propriedade também atende a "caixas" com display inline, como textos e imagens.</li>
+                    <li>Vertical: propriedade <em>vertical-align</em> para os conteúdos de &lt;th&gt; ou &lt;td&gt;, com os valores <strong>top, bottom ou middle</strong>.</li>
+                </ul>
+                <div class="code-box">
+                    <p>
+                        td { <br> <span class="tab-effect"><mark>text-align</mark>: center; /* horizontal */</span> <br> <span class="tab-effect">height: 50px;</span> <br> <span class="tab-effect"><mark>vertical-align</mark>: bottom; /* vertical */</span> <br> }
+                    </p>
+                </div>
+                <h4>Preenchimento (Padding)</h4>
+                <p>Controlando espaços entre o conteúdo e suas bordas.</p>
+                <div class="code-box">
+                    <p>
+                        th, td { <br> <span class="tab-effect"><mark>padding</mark>: 15px;</span> <br> <span class="tab-effect">text-align: left;</span> <br> }
+                    </p>
+                </div>
+                <h4>Inserindo Highlights</h4>
+                <p>Utilize o seletor <em>:hover</em> para destacar uma linha &lt;tr&gt; quando o cursor do mouse estiver sobre ela.</p>
+                <div class="code-box">
+                    <p>
+                        tr<mark>:hover</mark> { <mark>background-color</mark>:coral; }
+                    </p>
+                </div>
+                <h4>Alternando Cores de Linhas</h4>
+                <p>Utilize o seletor <em>nth-child()</em> para alternar as cores de fundo das linhas d eum tabela.</p>
+                <div class="code-box">
+                    <p>
+                        tr<mark>:nth-child(even)</mark> { background-color: lightgray; }
+                    </p>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h3>Exemplo</h3>
+                <div class="code-result-box">
+                    <div class="code-box">
+                        <p> 
+                            table { <br> <span class="tab-effect">border-collapse: collapse;</span> <br> <span class="tab-effect">margin: auto;</span> <br> <span class="tab-effect">text-align: center;</span> <br> <span class="tab-effect">width: 80%;</span> <br> } <br>
+                            th, td { <br> <span class="tab-effect">border: 1px solid "color";</span> <br> <span class="tab-effect">padding: 10px 20px;</span> <br> } <br>
+                            th { <br> <span class="tab-effect">background-color: "color";</span> <br> } <br>
+                            tbody tr:nth-child(odd) { <br> <span class="tab-effect">background-color: "color";</span> <br> } <br>
+                            tbody tr:hover { <br> <span class="tab-effect">background-color: "color";</span> <br> } <br>
+                        </p>
+                    </div>
+                    <div class="result-box">
+                        <table class="css-table-example">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Sobrenome</th>
+                                    <th>Idade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Amanda</td>
+                                    <td>Coelho</td>
+                                    <td>19 anos</td>
+                                </tr>
+                                <tr>
+                                    <td>Mateus</td>
+                                    <td>Silva</td>
+                                    <td>23 anos</td>
+                                </tr>
+                                <tr>
+                                    <td>Ayla</td>
+                                    <td>Nogueira</td>
+                                    <td>20 anos</td>
+                                </tr>
+                                <tr>
+                                    <td>Manuela</td>
+                                    <td>Marques</td>
+                                    <td>18 anos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-topic">
+                <h3>Display Flex</h3>
+                <h4>O que é o Flexbox?</h4>
+                <p>O Flexbox é um método que nos ajuda a organizar elementos em uma direção (horizontal ou vertical) e controlar suas dimensões, alinhamentos, ordem de aparecimento e mais. Para isso, precisamos de pelo menos dois elementos - um elemento pai chamado container flexível e pelo menos um elemento filho chamado item flexível.</p>
+                <div class="code-box">
+                    <p>
+                        .container { <br> <span class="tab-effect">display:flex;</span> <br> }
+                    </p>
+                </div>
+                <p>Associando <mark>display:flex</mark> ao container, ele passa a ter comportamento flexível e todos os seus filhos imediatos, tornam-se itens flex. Isto é, filhos dos itens flexíveis não são afetados.</p>
+                <h4>Propriedades do Container Flex</h4>
+                <ul class="topics">
+                    <li><mark>flex-direction</mark>: Esta propriedade define a direção dos itens flexíveis dentro de um container flexível.</li>
+                    <li><mark>justify-content</mark>: Controla o alinahmento dos itens flexíveis no eixo principal (horizontal se flex-direction:row, vertical se for column).</li>
+                    <li><mark>align-items</mark>: Define o comportamento padrão para como os itens são alinhados no eixo cruzado (perpendicular ao eixo principal).</li>
+                    <li><mark>flex-wrap</mark>: Esta propriedade espeficica se os itens devem ser quebrados em várias linhas ou permanecer numa única linha. O valor <em>wrap</em> permite que os itens sejam distribuídos em linhas ou colunas adicionais se não houver espaço suficiente no container.</li>
+                </ul>
+                <div class="code-box">
+                    <p>
+                        display: flex; <br> flex-direction: row (padrão) | row-reverse | column | column-reverse; <br> justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; <br> align-items: stretch | flex-start | flex-end | center | baseline; <br> flex-wrap: nowrap | wrap | wrap-reverse;
+                    </p>
                 </div>
             </div>
         </section>
