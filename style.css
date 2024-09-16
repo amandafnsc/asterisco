@@ -392,16 +392,24 @@ footer p {
 
 /* contents */
 
-.html-content,
+.intro-html-content,
+.forms-html-content,
 .css-content,
 .js-content {
     border: 2px solid var(--darkest-color);
     border-radius: 20px;
     box-sizing: border-box;
     color: var(--darkest-color);
-    margin: 0px auto 80px;
     max-width: 900px;
     padding: 10px 40px 30px;
+}
+
+.intro-html-content {
+    margin: 0px auto 40px;
+}
+
+.forms-html-content, .css-content, .js-content {
+    margin: 0px auto 80px;
 }
 
 .new-topic {
@@ -459,7 +467,7 @@ footer p {
 
 /* html content */
 
-.html-content mark {
+.intro-html-content mark, .forms-html-content mark {
     background-color: var(--html-color);
 }
 
